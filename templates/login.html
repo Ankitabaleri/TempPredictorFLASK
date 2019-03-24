@@ -1,0 +1,25 @@
+<html>
+<body>
+  <h1>Probability Distribution Graph Plot:<h1>
+  <img src="static/Graph.png" alt="Probability Distribution Graph">
+  <p>
+     <h4><br><br>Mean of probability distribution is {{ mean }}<h4>
+	 <h4>Median of probability distribution is {{ median }}<h4>
+	 <h4>Mode of probability distribution is {{ mode }}<h4>
+	 <h4>Standard deviation of probability distribution is {{ sd }}<h4>
+	 <h4>Variance of probability distribution is {{ var }}<h4>
+  </p><br><br>
+  <h2>Application of probability function to analyze weather using Logisstic Regression Classifiation(ML Model)
+  of each weekday and predict the weather of current weekday</h2>
+  <p>
+     <h4>The probability this weekday being Rainy is {{ rainy }}<h4>
+	 <h4>The probability this weekday being Sunny is  {{ sunny }}<h4>
+  </p><br><br>
+  <h2>Random Variable Testing:</h2>
+  <form action = "http://localhost:5000/login" method = "post">
+      Enter the random temperature:<br>
+      <input type="text" name="nm" value="Celsius"><br><br>
+      <input type="submit" value="Submit">
+   </form>
+</body>
+</html>
