@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<style>
+body {
+background-image: url("image.jpg");
+}
+</style>
+</head>
+<body >
+
+<font color="white">   
+<center>
+<h1><u>Temperature Analysis</u></h1> 
+<h2>Probability Distribution Graph Plot<h3>
+  
+<img src="static/Graph.png">
+  
+<p>
+     
+<h3><br><br>Mean of probability distribution is {{ mean }}</h3>
+	
+<h3>Median of probability distribution is {{ median }}</h3>
+	 
+<h3>Mode of probability distribution is {{ mode }}</h3>
+	 
+<h3>Standard deviation of probability distribution is {{ sd }}</h3>
+	 
+<h3>Variance of probability distribution is {{ var }}</h3>
+  
+</p><br><br>
+   
+<p>
+  
+<h2>Determining weather</h2>
+<h3>The probability this weekday being Rainy is {{ rainy }}</h3>
+	 
+<h3>The probability this weekday being Sunny is  {{ sunny }}</h3>
+  
+</p><br><br>
+  
+<h2>Random Variable Testing</h2>
+  
+<form action = "http://localhost:5000/login" method = "post">
+      
+<h3>Enter the random temperature</h3><br> 
+<input type="text" name="nm" value="Celsius"><br><br>
+      
+<input type="submit" value="Submit">
+   
+</form>
+
+</center>
+</font>
+</body>
+
+</html>
